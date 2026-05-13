@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhodes Terminal — AI Workflow SaaS 官网</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+      <header class="navbar">
+        <div class="navbar__brand">
+          <span class="brand__logo font-orbitron text-surface-strong">RHODES</span>
+          <span class="brand__label text-secondary uppercase tracking-wider font-rajdhani">TERMINAL</span>
+        </div>
+        <nav class="navbar__nav" aria-label="Primary navigation">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#about" data-scroll class="nav-link">关于</a></li>
+            <li><a href="#skills" data-scroll class="nav-link">能力</a></li>
+            <li><a href="#projects" data-scroll class="nav-link">案例</a></li>
+            <li><a href="#resume" data-scroll class="nav-link">历程</a></li>
+            <li><a href="#contact" data-scroll class="nav-link">联系</a></li>
+          </ul>
+        </nav>
+        <div class="navbar__status">
+          <span class="status-indicator status-indicator--online"></span>
+          <span class="status-text text-muted uppercase tracking-wide font-rajdhani">SYSTEM ACTIVE</span>
+        </div>
+      </header>
+
+    <main class="page-content">
+      <section id="hero" class="section section--hero">
+        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 01</div>
+        <div class="section__header grid grid-cols-2 gap-2xl items-center">
+          <div class="section__intro animate-fade-in">
+            <p class="section__prefix text-sm uppercase tracking-wider text-muted font-rajdhani">AI 工作台</p>
+            <h1 class="section__title text-5xl font-orbitron font-bold leading-tight text-surface-strong">
+              未来业务级<br>
+              <span class="text-primary">AI Workflow SaaS</span>
+            </h1>
+            <p class="section__description text-lg leading-relaxed text-muted mt-lg">
+              面向企业级运营的AI产品中台，将数据、流程与自动化融入业务决策，持续驱动组织效率与智能化生长。
+            </p>
+            <div class="section__actions flex gap-md mt-xl">
+              <a class="btn btn--primary btn--lg hover-glow-alert" href="#contact" data-scroll>
+                <span class="font-semibold">开启合作</span>
+              </a>
+              <a class="btn btn--secondary btn--lg" href="#about" data-scroll>
+                <span class="font-medium">了解能力</span>
+              </a>
+            </div>
+          </div>
+          <div class="section__visual grid grid-cols-2 gap-lg animate-slide-up">
+            <!-- AI Dashboard Card -->
+            <div class="card card--terminal motion-hover">
+              <div class="p-lg">
+                <div class="flex justify-between items-center mb-md">
+                  <span class="text-xs uppercase tracking-wider text-secondary font-rajdhani">智能概览</span>
+                  <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                </div>
+                <div class="text-2xl font-orbitron font-bold text-surface-muted mb-sm">12</div>
+                <div class="text-xs text-muted uppercase tracking-wide">活跃流程</div>
+                <div class="mt-md grid grid-cols-2 gap-xs">
+                  <div class="text-center">
+                    <div class="text-lg font-bold text-primary">85%</div>
+                    <div class="text-xs text-muted">效率</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-lg font-bold text-secondary">24</div>
+                    <div class="text-xs text-muted">日均任务</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workflow UI Card -->
+            <div class="card card--data motion-hover">
+              <div class="p-lg">
+                <div class="flex justify-between items-center mb-md">
+                  <span class="text-xs uppercase tracking-wider text-primary font-rajdhani">工作流引擎</span>
+                  <span class="text-xs text-alert font-mono">v2.1</span>
+                </div>
+                <div class="space-y-sm">
+                  <div class="flex items-center gap-sm">
+                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                    <span class="text-sm">数据处理</span>
+                  </div>
+                  <div class="flex items-center gap-sm">
+                    <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                    <span class="text-sm">AI 分析</span>
+                  </div>
+                  <div class="flex items-center gap-sm">
+                    <div class="w-2 h-2 bg-gold rounded-full"></div>
+                    <span class="text-sm">报告生成</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Analysis Card -->
+            <div class="card card--data motion-hover">
+              <div class="p-lg">
+                <div class="flex justify-between items-center mb-md">
+                  <span class="text-xs uppercase tracking-wider text-teal font-rajdhani">数据洞察</span>
+                  <span class="text-xs text-muted font-mono">LIVE</span>
+                </div>
+                <div class="text-3xl font-orbitron font-bold text-teal mb-sm">+127%</div>
+                <div class="text-xs text-muted uppercase tracking-wide mb-md">生产力提升</div>
+                <div class="h-1 bg-surface-muted rounded-full overflow-hidden">
+                  <div class="h-full bg-teal rounded-full animate-pulse" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AI Terminal Module -->
+            <div class="card card--terminal motion-hover">
+              <div class="p-lg">
+                <div class="flex justify-between items-center mb-md">
+                  <span class="text-xs uppercase tracking-wider text-alert font-rajdhani">AI 终端</span>
+                  <div class="flex gap-xs">
+                    <div class="w-1.5 h-1.5 bg-alert rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
+                    <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                  </div>
+                </div>
+                <div class="font-mono text-xs text-surface-muted leading-loose">
+                  <div>> 初始化 AI 核心...</div>
+                  <div>> 载入数据模型...</div>
+                  <div>> 系统准备就绪</div>
+                  <div class="text-primary">>> 等待用户指令...</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section--about">
+        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 02</div>
+        <div class="section__header">
+          <div class="section__title-block">
+            <h2 class="section__title text-4xl font-orbitron font-bold">能力概览</h2>
+            <p class="section__description text-lg leading-relaxed text-muted mt-md">
+              面向企业级AI流程的业务能力、数据觉察与系统思维。
+            </p>
+          </div>
+        </div>
+        <div class="section__grid grid grid-cols-3 gap-xl animate-fade-in">
+          <!-- Business Background Module -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center gap-md mb-lg">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                <span class="text-surface font-bold text-lg">B</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-orbitron font-semibold">业务基础</h3>
+                <span class="text-xs text-muted uppercase tracking-wide">核心能力</span>
+              </div>
+            </div>
+            <div class="space-y-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-muted">采购系统</span>
+                <span class="text-sm font-medium">高级</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-muted">成本管理</span>
+                <span class="text-sm font-medium">专家</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-muted">流程优化</span>
+                <span class="text-sm font-medium">精通</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Awareness Module -->
+          <div class="card card--data motion-hover">
+            <div class="flex items-center justify-between mb-lg">
+              <h3 class="text-lg font-orbitron font-semibold">数据意识</h3>
+              <span class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded">ACTIVE</span>
+            </div>
+            <div class="space-y-md">
+              <div class="text-center">
+                <div class="text-2xl font-orbitron font-bold text-teal">94%</div>
+                <div class="text-xs text-muted uppercase tracking-wide">数据驱动决策</div>
+              </div>
+              <div class="h-1 bg-surface-muted rounded-full overflow-hidden">
+                <div class="h-full bg-teal rounded-full" style="width: 94%"></div>
+              </div>
+              <div class="grid grid-cols-2 gap-sm text-center">
+                <div>
+                  <div class="text-lg font-bold">50+</div>
+                  <div class="text-xs text-muted">已分析报告</div>
+                </div>
+                <div>
+                  <div class="text-lg font-bold">85%</div>
+                  <div class="text-xs text-muted">效率提升</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Learning Capability -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center gap-md mb-lg">
+              <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                <span class="text-surface font-bold text-lg">AI</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-orbitron font-semibold">AI整合能力</h3>
+                <span class="text-xs text-muted uppercase tracking-wide">学习进度</span>
+              </div>
+            </div>
+            <div class="space-y-sm">
+              <div class="flex items-center gap-sm">
+                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                <span class="text-sm">工具采用率：75%</span>
+              </div>
+              <div class="flex items-center gap-sm">
+                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                <span class="text-sm">工作流自动化：60%</span>
+              </div>
+              <div class="flex items-center gap-sm">
+                <div class="w-2 h-2 bg-gold rounded-full"></div>
+                <span class="text-sm">高级应用：40%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Thinking Module -->
+          <div class="card card--data motion-hover">
+            <h3 class="text-lg font-orbitron font-semibold mb-lg">体系架构</h3>
+            <div class="space-y-md">
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">信息结构化</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-primary rounded-full"></div>
+                  <div class="w-2 h-2 bg-primary rounded-full"></div>
+                  <div class="w-2 h-2 bg-primary rounded-full"></div>
+                  <div class="w-2 h-2 bg-primary rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">流程映射</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">跨组协同</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital Transformation Interest -->
+          <div class="card card--panel hover-lift">
+            <div class="flex items-center gap-md mb-lg">
+              <div class="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
+                <span class="text-surface font-bold text-lg">DX</span>
+              </div>
+              <div>
+                <h3 class="text-lg font-orbitron font-semibold">Digital Evolution</h3>
+                <span class="text-xs text-muted uppercase tracking-wide">Transformation Focus</span>
+              </div>
+            </div>
+            <div class="space-y-sm">
+              <div class="text-sm text-muted">Current Interests:</div>
+              <div class="flex flex-wrap gap-xs">
+                <span class="text-xs bg-primary bg-opacity-10 text-primary px-sm py-xs rounded">AI Operations</span>
+                <span class="text-xs bg-secondary bg-opacity-10 text-secondary px-sm py-xs rounded">Data Strategy</span>
+                <span class="text-xs bg-teal bg-opacity-10 text-teal px-sm py-xs rounded">Process Automation</span>
+                <span class="text-xs bg-gold bg-opacity-10 text-gold px-sm py-xs rounded">Digital Workflows</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Module -->
+          <div class="card card--data hover-lift">
+            <h3 class="text-lg font-orbitron font-semibold mb-lg">Evolution Timeline</h3>
+            <div class="space-y-md">
+              <div class="flex items-start gap-sm">
+                <div class="w-2 h-2 bg-primary rounded-full mt-sm"></div>
+                <div>
+                  <div class="text-sm font-medium">2021-2023</div>
+                  <div class="text-xs text-muted">Business Operations & Cost Analysis</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-sm">
+                <div class="w-2 h-2 bg-secondary rounded-full mt-sm"></div>
+                <div>
+                  <div class="text-sm font-medium">2023-Present</div>
+                  <div class="text-xs text-muted">AI Tools & Data Consciousness</div>
+                </div>
+              </div>
+              <div class="flex items-start gap-sm">
+                <div class="w-2 h-2 bg-gold rounded-full mt-sm"></div>
+                <div>
+                  <div class="text-sm font-medium">Future</div>
+                  <div class="text-xs text-muted">Digital Operations & AI Integration</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--skills">
+        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 03</div>
+        <div class="section__header">
+          <h2 class="section__title text-4xl font-orbitron font-bold">能力模块</h2>
+          <p class="section__description text-lg leading-relaxed text-muted mt-md">
+            AI驱动工作流、数据运营与业务智能的整合能力。
+          </p>
+        </div>
+        <div class="section__grid grid grid-cols-2 gap-xl animate-fade-in">
+          <!-- AI Tool Stack -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center justify-between mb-lg">
+              <div class="flex items-center gap-md">
+                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                  <span class="text-surface font-bold text-lg">AI</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-orbitron font-semibold">AI 工具栈</h3>
+                  <span class="text-xs text-muted uppercase tracking-wide">集成层</span>
+                </div>
+              </div>
+              <span class="text-xs text-primary uppercase tracking-wide bg-primary bg-opacity-10 px-sm py-xs rounded">ACTIVE</span>
+            </div>
+            <div class="grid grid-cols-2 gap-sm">
+              <div class="text-center p-sm bg-surface-muted rounded">
+                <div class="text-sm font-medium">ChatGPT</div>
+                <div class="text-xs text-muted">内容生成</div>
+              </div>
+              <div class="text-center p-sm bg-surface-muted rounded">
+                <div class="text-sm font-medium">Claude</div>
+                <div class="text-xs text-muted">分析助手</div>
+              </div>
+              <div class="text-center p-sm bg-surface-muted rounded">
+                <div class="text-sm font-medium">Coze</div>
+                <div class="text-xs text-muted">工作流搭建</div>
+              </div>
+              <div class="text-center p-sm bg-surface-muted rounded">
+                <div class="text-sm font-medium">Cursor</div>
+                <div class="text-xs text-muted">代码助手</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Capability Panels -->
+          <div class="card card--data motion-hover">
+            <div class="flex items-center justify-between mb-lg">
+              <h3 class="text-lg font-orbitron font-semibold">数据运营</h3>
+              <span class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded">CORE</span>
+            </div>
+            <div class="space-y-md">
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">SQL 基础</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-surface-muted rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">数据分析</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">Excel 高级</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-muted">Power BI</span>
+                <div class="flex gap-xs">
+                  <div class="w-2 h-2 bg-teal rounded-full"></div>
+                  <div class="w-2 h-2 bg-surface-muted rounded-full"></div>
+                  <div class="w-2 h-2 bg-surface-muted rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Workflow Modules -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center justify-between mb-lg">
+              <div class="flex items-center gap-md">
+                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
+                  <span class="text-surface font-bold text-lg">WF</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-orbitron font-semibold">工作流自动化</h3>
+                  <span class="text-xs text-muted uppercase tracking-wide">流程层</span>
+                </div>
+              </div>
+              <span class="text-xs text-secondary uppercase tracking-wide bg-secondary bg-opacity-10 px-sm py-xs rounded">GROWING</span>
+            </div>
+            <div class="space-y-sm">
+              <div class="flex items-center gap-sm">
+                <div class="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
+                <div>
+                  <div class="text-sm font-medium">文档处理</div>
+                  <div class="text-xs text-muted">AI辅助内容生成</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-sm">
+                <div class="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
+                <div>
+                  <div class="text-sm font-medium">数据管道</div>
+                  <div class="text-xs text-muted">自动化报表流程</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-sm">
+                <div class="w-3 h-3 bg-gold rounded-full flex-shrink-0"></div>
+                <div>
+                  <div class="text-sm font-medium">任务协同</div>
+                  <div class="text-xs text-muted">跨组自动调度</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Intelligence Cards -->
+          <div class="card card--data motion-hover">
+            <div class="flex items-center justify-between mb-lg">
+              <h3 class="text-lg font-orbitron font-semibold">商业智能</h3>
+              <span class="text-xs text-gold uppercase tracking-wide bg-gold bg-opacity-10 px-sm py-xs rounded">EXPERT</span>
+            </div>
+            <div class="grid grid-cols-2 gap-md">
+              <div class="text-center">
+                <div class="text-2xl font-orbitron font-bold text-gold">8+</div>
+                <div class="text-xs text-muted uppercase tracking-wide">Years Experience</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-orbitron font-bold text-gold">50+</div>
+                <div class="text-xs text-muted uppercase tracking-wide">Process Optimized</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-orbitron font-bold text-gold">85%</div>
+                <div class="text-xs text-muted uppercase tracking-wide">Efficiency Gain</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl font-orbitron font-bold text-gold">100%</div>
+                <div class="text-xs text-muted uppercase tracking-wide">Digital Mindset</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Information Architecture -->
+          <div class="card card--panel motion-hover col-span-2">
+            <div class="flex items-center justify-between mb-lg">
+              <div class="flex items-center gap-md">
+                <div class="w-12 h-12 bg-alert rounded-lg flex items-center justify-center">
+                  <span class="text-surface font-bold text-lg">IA</span>
+                </div>
+                <div>
+                  <h3 class="text-lg font-orbitron font-semibold">信息架构</h3>
+                  <span class="text-xs text-muted uppercase tracking-wide">结构层</span>
+                </div>
+              </div>
+              <span class="text-xs text-alert uppercase tracking-wide bg-alert bg-opacity-10 px-sm py-xs rounded">SYSTEM</span>
+            </div>
+            <div class="grid grid-cols-3 gap-lg">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
+                  <span class="text-primary font-bold text-xl">📊</span>
+                </div>
+                <div class="text-sm font-medium">数据结构</div>
+                <div class="text-xs text-muted">组织信息流</div>
+              </div>
+              <div class="text-center">
+                <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
+                  <span class="text-secondary font-bold text-xl">🔗</span>
+                </div>
+                <div class="text-sm font-medium">流程映射</div>
+                <div class="text-xs text-muted">可视化工作流</div>
+              </div>
+              <div class="text-center">
+                <div class="w-16 h-16 bg-teal bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
+                  <span class="text-teal font-bold text-xl">🤝</span>
+                </div>
+                <div class="text-sm font-medium">协作中台</div>
+                <div class="text-xs text-muted">跨组协调</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--projects">
+        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 04</div>
+        <div class="section__header">
+          <h2 class="section__title text-4xl font-orbitron font-bold">项目案例</h2>
+          <p class="section__description text-lg leading-relaxed text-muted mt-md">
+            AI工作流实验、数据分析实战与业务优化实践。
+          </p>
+        </div>
+        <div class="section__grid grid grid-cols-2 gap-xl animate-fade-in">
+          <!-- AI Workflow Experiment -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--cyan">AI 工作流</span>
+              <span class="text-xs text-muted uppercase tracking-wide">实验</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">报告自动化流水线</h3>
+            <div class="space-y-sm mb-md">
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">目标：</span>
+                <span class="text-sm">自动生成报告</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">工具：</span>
+                <span class="text-sm">ChatGPT + Excel 宏</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">成果：</span>
+                <span class="text-sm">人工工时减少 60%</span>
+              </div>
+            </div>
+            <div class="text-xs text-secondary uppercase tracking-wide bg-secondary bg-opacity-10 px-sm py-xs rounded inline-block">
+              学习：AI辅助内容结构化
+            </div>
+          </div>
+
+          <!-- Data Analysis Practice -->
+          <div class="card card--data motion-hover">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--lime">数据分析</span>
+              <span class="text-xs text-muted uppercase tracking-wide">实践</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">成本趋势可视化</h3>
+            <div class="space-y-sm mb-md">
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">目标：</span>
+                <span class="text-sm">发现成本模式</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">工具：</span>
+                <span class="text-sm">Excel + Power BI</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">成果：</span>
+                <span class="text-sm">发现 15% 节省空间</span>
+              </div>
+            </div>
+            <div class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded inline-block">
+              学习：数据故事化表达
+            </div>
+          </div>
+
+          <!-- SQL Learning Case -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--primary">SQL 学习</span>
+              <span class="text-xs text-muted uppercase tracking-wide">案例</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">采购数据查询</h3>
+            <div class="space-y-sm mb-md">
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">目标：</span>
+                <span class="text-sm">提取供应商绩效数据</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">工具：</span>
+                <span class="text-sm">SQL + 数据库浏览器</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">成果：</span>
+                <span class="text-sm">月报自动化生成</span>
+              </div>
+            </div>
+            <div class="text-xs text-primary uppercase tracking-wide bg-primary bg-opacity-10 px-sm py-xs rounded inline-block">
+              学习：查询优化与关联
+            </div>
+          </div>
+
+          <!-- Automation Office Flow -->
+          <div class="card card--data motion-hover">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--secondary">自动化</span>
+              <span class="text-xs text-muted uppercase tracking-wide">实施</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">邮件处理工作流</h3>
+            <div class="space-y-sm mb-md">
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">目标：</span>
+                <span class="text-sm">简化沟通流程</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">工具：</span>
+                <span class="text-sm">Claude + Zapier</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">成果：</span>
+                <span class="text-sm">响应时间缩短 40%</span>
+              </div>
+            </div>
+            <div class="text-xs text-secondary uppercase tracking-wide bg-secondary bg-opacity-10 px-sm py-xs rounded inline-block">
+              学习：API集成与触发器
+            </div>
+          </div>
+
+          <!-- Information Organization System -->
+          <div class="card card--panel motion-hover">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--gold">信息架构</span>
+              <span class="text-xs text-muted uppercase tracking-wide">系统</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">知识库结构</h3>
+            <div class="space-y-sm mb-md">
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">目标：</span>
+                <span class="text-sm">组织团队知识</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">工具：</span>
+                <span class="text-sm">Notion + AI 分类</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">成果：</span>
+                <span class="text-sm">信息检索效率提升 70%</span>
+              </div>
+            </div>
+            <div class="text-xs text-gold uppercase tracking-wide bg-gold bg-opacity-10 px-sm py-xs rounded inline-block">
+              学习：标签系统与分类设计
+            </div>
+          </div>
+
+          <!-- Cost Analysis Approach -->
+          <div class="card card--data motion-hover">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--teal">成本分析</span>
+              <span class="text-xs text-muted uppercase tracking-wide">方法</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">预算差异仪表盘</h3>
+            <div class="space-y-sm mb-md">
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">目标：</span>
+                <span class="text-sm">监控财务表现</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">工具：</span>
+                <span class="text-sm">Excel + 数据可视化</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-muted">成果：</span>
+                <span class="text-sm">提前发现成本超支</span>
+              </div>
+            </div>
+            <div class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded inline-block">
+              学习：财务数据解读
+            </div>
+          </div>
+
+          <!-- AI-Assisted Business Process Optimization -->
+          <div class="card card--panel motion-hover col-span-2">
+            <div class="flex items-center justify-between mb-md">
+              <span class="status-badge status-badge--alert">AI 优化</span>
+              <span class="text-xs text-muted uppercase tracking-wide">集成</span>
+            </div>
+            <h3 class="text-lg font-orbitron font-semibold mb-sm">采购工作流增强</h3>
+            <div class="grid grid-cols-2 gap-md mb-md">
+              <div>
+                <div class="text-sm text-muted mb-xs">目标：</div>
+                <div class="text-sm">优化供应商选择流程</div>
+              </div>
+              <div>
+                <div class="text-sm text-muted mb-xs">工具：</div>
+                <div class="text-sm">Coze + 决策矩阵</div>
+              </div>
+              <div>
+                <div class="text-sm text-muted mb-xs">成果：</div>
+                <div class="text-sm">决策准确率提高 25%</div>
+              </div>
+              <div>
+                <div class="text-sm text-muted mb-xs">影响：</div>
+                <div class="text-sm">流程周期缩短 35%</div>
+              </div>
+            </div>
+            <div class="flex gap-sm">
+              <div class="text-xs text-alert uppercase tracking-wide bg-alert bg-opacity-10 px-sm py-xs rounded">
+                学习：AI 决策支持系统
+              </div>
+              <div class="text-xs text-primary uppercase tracking-wide bg-primary bg-opacity-10 px-sm py-xs rounded">
+                结果：可扩展业务智能框架
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section section--resume">
+        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 05</div>
+        <div class="section__header">
+          <h2 class="section__title text-4xl font-orbitron font-bold">成长历程</h2>
+          <p class="section__description text-lg leading-relaxed text-muted mt-md">
+            一份关于能力演进、AI实践与数据方法的系统记录。
+          </p>
+        </div>
+        <div class="section__grid grid grid-cols-3 gap-xl animate-fade-in">
+          <article class="card card--panel motion-hover">
+            <span class="status-badge status-badge--primary">2021</span>
+            <h3 class="text-lg font-orbitron font-semibold mt-md">业务流程筑基</h3>
+            <p class="text-sm text-muted mt-sm">搭建采购与成本流程，建立结构化文档与协作交付。</p>
+            <div class="mt-lg text-xs text-muted uppercase tracking-wide">
+              焦点：流程清晰 • 成本意识
+            </div>
+          </article>
+
+          <article class="card card--data motion-hover">
+            <span class="status-badge status-badge--teal">2022</span>
+            <h3 class="text-lg font-orbitron font-semibold mt-md">数据觉察启动</h3>
+            <p class="text-sm text-muted mt-sm">将业务数据转化为可执行的分析洞察，支撑决策闭环。</p>
+            <div class="mt-lg text-xs text-muted uppercase tracking-wide">
+              焦点：数据结构 • 洞察生成
+            </div>
+          </article>
+
+          <article class="card card--panel motion-hover">
+            <span class="status-badge status-badge--secondary">2023</span>
+            <h3 class="text-lg font-orbitron font-semibold mt-md">AI学习激活</h3>
+            <p class="text-sm text-muted mt-sm">探索AI工具在工作流中的支持角色，实践自动化运营手段。</p>
+            <div class="mt-lg text-xs text-muted uppercase tracking-wide">
+              焦点：AI工具 • 自动化实践
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-panel card card--data motion-hover mt-2xl">
+          <div class="timeline-panel__header flex items-center justify-between mb-md">
+            <div>
+              <h3 class="text-xl font-orbitron font-semibold">能力演进</h3>
+              <p class="text-sm text-muted mt-xs">从业务认知到AI驱动数字化运营的多层次成长路径。</p>
+            </div>
+            <span class="text-xs text-gold uppercase tracking-wide bg-gold bg-opacity-10 px-sm py-xs rounded">系统记录</span>
+          </div>
+          <div class="timeline-flow">
+            <div class="timeline-node">
+              <span class="timeline-node__marker bg-primary"></span>
+              <div>
+                <div class="text-sm font-medium">业务认知</div>
+                <div class="text-xs text-muted">以采购、成本与工程为基础构建业务理解。</div>
+              </div>
+            </div>
+            <div class="timeline-node">
+              <span class="timeline-node__marker bg-secondary"></span>
+              <div>
+                <div class="text-sm font-medium">数据结构化</div>
+                <div class="text-xs text-muted">编排更清晰的数据格式，支持分析与汇报。</div>
+              </div>
+            </div>
+            <div class="timeline-node">
+              <span class="timeline-node__marker bg-teal"></span>
+              <div>
+                <div class="text-sm font-medium">AI工作流</div>
+                <div class="text-xs text-muted">让工具支撑例行任务与决策准备。</div>
+              </div>
+            </div>
+            <div class="timeline-node">
+              <span class="timeline-node__marker bg-alert"></span>
+              <div>
+                <div class="text-sm font-medium">数字化转型</div>
+                <div class="text-xs text-muted">连接系统、数据与流程，构建未来运营框架。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 06</div>
+        <div class="section__header">
+          <div class="section__title-block">
+            <h2 class="section__title text-4xl font-orbitron font-bold">通信终端</h2>
+            <p class="section__description text-lg leading-relaxed text-muted mt-md">
+              面向合作与业务启动的终端式联络入口。
+            </p>
+          </div>
+        </div>
+        <div class="section__grid split-grid">
+          <article class="card panel terminal-panel contact-terminal">
+            <div class="panel__meta">
+              <span class="panel__label">通信节点</span>
+              <span class="panel__tag">已就绪</span>
+            </div>
+            <div class="terminal-grid">
+              <div class="terminal-line"><span class="terminal-key">EMAIL</span><a href="mailto:example@domain.dev"><strong>example@domain.dev</strong></a></div>
+              <div class="terminal-line"><span class="terminal-key">GITHUB</span><a href="https://github.com/yourhandle" target="_blank" rel="noreferrer"><strong>github.com/yourhandle</strong></a></div>
+              <div class="terminal-line"><span class="terminal-key">LINKEDIN</span><a href="#" class="reserved"><strong>linkedin.com/in/yourname</strong></a></div>
+              <div class="terminal-line"><span class="terminal-key">RESUME</span><a href="resume.pdf" download class="terminal-action"><strong>DOWNLOAD PACKAGE</strong></a></div>
+            </div>
+            <div class="terminal-footer">&gt; 终端会话待命</div>
+          </article>
+          <article class="card panel terminal-panel contact-panel contact-summary">
+            <div class="contact-summary__heading text-xs uppercase tracking-wider text-secondary">系统状态</div>
+            <div class="contact-summary__entry"><span>端口</span><strong>COMMS-01</strong></div>
+            <div class="contact-summary__entry"><span>安全</span><strong>加密通道</strong></div>
+            <div class="contact-summary__entry"><span>同步</span><strong>0.45s</strong></div>
+            <div class="contact-summary__entry"><span>队列</span><strong>待部署</strong></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__row">
+        <div>
+          <span class="footer-brand">RHODES</span>
+          <span class="footer-note">AI + 业务变革</span>
+        </div>
+        <div class="footer-meta">© 2026 Rhodes Terminal</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
