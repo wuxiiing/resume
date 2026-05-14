@@ -3,44 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rhodes Terminal — 面向企业级运营的AI Workflow SaaS平台，将数据、流程与自动化融入业务决策。" />
   <title>Rhodes Terminal — AI Workflow SaaS 官网</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="app-shell">
-      <header class="navbar">
-        <div class="navbar__brand">
-          <span class="brand__logo font-orbitron text-surface-strong">RHODES</span>
-          <span class="brand__label text-secondary uppercase tracking-wider font-rajdhani">TERMINAL</span>
-        </div>
-        <nav class="navbar__nav" aria-label="Primary navigation">
-          <button class="nav-toggle" aria-label="Toggle navigation">
-            <span class="nav-toggle__line"></span>
-            <span class="nav-toggle__line"></span>
-            <span class="nav-toggle__line"></span>
-          </button>
-          <ul class="nav-list">
-            <li><a href="#about" data-scroll class="nav-link">关于</a></li>
-            <li><a href="#skills" data-scroll class="nav-link">能力</a></li>
-            <li><a href="#projects" data-scroll class="nav-link">案例</a></li>
-            <li><a href="#resume" data-scroll class="nav-link">历程</a></li>
-            <li><a href="#contact" data-scroll class="nav-link">联系</a></li>
-          </ul>
-        </nav>
-        <div class="navbar__status">
-          <span class="status-indicator status-indicator--online"></span>
-          <span class="status-text text-muted uppercase tracking-wide font-rajdhani">SYSTEM ACTIVE</span>
-        </div>
-      </header>
+  <a href="#hero" class="skip-link">跳转到主要内容</a>
 
-    <main class="page-content">
-      <section id="hero" class="section section--hero">
+  <div class="app-shell">
+    <header class="navbar" role="banner">
+      <div class="navbar__brand">
+        <span class="brand__logo font-orbitron text-surface-strong">RHODES</span>
+        <span class="brand__label text-secondary uppercase tracking-wider font-rajdhani">TERMINAL</span>
+      </div>
+      <nav class="navbar__nav" aria-label="主导航">
+        <button class="nav-toggle" aria-label="切换导航" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+          <span class="nav-toggle__line" aria-hidden="true"></span>
+        </button>
+        <ul class="nav-list" id="nav-menu" role="menubar">
+          <li role="none"><a href="#about" data-scroll class="nav-link" role="menuitem">关于</a></li>
+          <li role="none"><a href="#skills" data-scroll class="nav-link" role="menuitem">能力</a></li>
+          <li role="none"><a href="#projects" data-scroll class="nav-link" role="menuitem">案例</a></li>
+          <li role="none"><a href="#resume" data-scroll class="nav-link" role="menuitem">历程</a></li>
+          <li role="none"><a href="#contact" data-scroll class="nav-link" role="menuitem">联系</a></li>
+        </ul>
+      </nav>
+      <div class="navbar__status" aria-hidden="true">
+        <span class="status-indicator status-indicator--online"></span>
+        <span class="status-text text-muted uppercase tracking-wide font-rajdhani">SYSTEM ACTIVE</span>
+      </div>
+    </header>
+
+    <main class="page-content" id="main-content">
+      <section id="hero" class="section section--hero" aria-labelledby="hero-title">
         <div class="section__eyebrow text-muted uppercase tracking-wider">模块 01</div>
-        <div class="section__header grid grid-cols-2 gap-2xl items-center">
+        <div class="section__header">
           <div class="section__intro animate-fade-in">
             <p class="section__prefix text-sm uppercase tracking-wider text-muted font-rajdhani">AI 工作台</p>
-            <h1 class="section__title text-5xl font-orbitron font-bold leading-tight text-surface-strong">
-              未来业务级<br>
+            <h1 id="hero-title" class="section__title text-5xl font-orbitron font-bold leading-tight text-surface-strong">
+              未来业务级<br />
               <span class="text-primary">AI Workflow SaaS</span>
             </h1>
             <p class="section__description text-lg leading-relaxed text-muted mt-lg">
@@ -123,16 +132,16 @@
                 <div class="flex justify-between items-center mb-md">
                   <span class="text-xs uppercase tracking-wider text-alert font-rajdhani">AI 终端</span>
                   <div class="flex gap-xs">
-                    <div class="w-1.5 h-1.5 bg-alert rounded-full"></div>
-                    <div class="w-1.5 h-1.5 bg-secondary rounded-full"></div>
-                    <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <div class="w-1-5 h-1-5 bg-alert rounded-full"></div>
+                    <div class="w-1-5 h-1-5 bg-secondary rounded-full"></div>
+                    <div class="w-1-5 h-1-5 bg-primary rounded-full"></div>
                   </div>
                 </div>
                 <div class="font-mono text-xs text-surface-muted leading-loose">
-                  <div>> 初始化 AI 核心...</div>
-                  <div>> 载入数据模型...</div>
-                  <div>> 系统准备就绪</div>
-                  <div class="text-primary">>> 等待用户指令...</div>
+                  <div>&gt; 初始化 AI 核心...</div>
+                  <div>&gt; 载入数据模型...</div>
+                  <div>&gt; 系统准备就绪</div>
+                  <div class="text-primary">&gt;&gt; 等待用户指令...</div>
                 </div>
               </div>
             </div>
@@ -140,11 +149,11 @@
         </div>
       </section>
 
-      <section id="about" class="section section--about">
+      <section id="about" class="section section--about" aria-labelledby="about-title">
         <div class="section__eyebrow text-muted uppercase tracking-wider">模块 02</div>
         <div class="section__header">
           <div class="section__title-block">
-            <h2 class="section__title text-4xl font-orbitron font-bold">能力概览</h2>
+            <h2 id="about-title" class="section__title text-4xl font-orbitron font-bold">能力概览</h2>
             <p class="section__description text-lg leading-relaxed text-muted mt-md">
               面向企业级AI流程的业务能力、数据觉察与系统思维。
             </p>
@@ -293,21 +302,21 @@
                 <div class="w-2 h-2 bg-primary rounded-full mt-sm"></div>
                 <div>
                   <div class="text-sm font-medium">2021-2023</div>
-                  <div class="text-xs text-muted">Business Operations & Cost Analysis</div>
+                  <div class="text-xs text-muted">Business Operations &amp; Cost Analysis</div>
                 </div>
               </div>
               <div class="flex items-start gap-sm">
                 <div class="w-2 h-2 bg-secondary rounded-full mt-sm"></div>
                 <div>
                   <div class="text-sm font-medium">2023-Present</div>
-                  <div class="text-xs text-muted">AI Tools & Data Consciousness</div>
+                  <div class="text-xs text-muted">AI Tools &amp; Data Consciousness</div>
                 </div>
               </div>
               <div class="flex items-start gap-sm">
                 <div class="w-2 h-2 bg-gold rounded-full mt-sm"></div>
                 <div>
                   <div class="text-sm font-medium">Future</div>
-                  <div class="text-xs text-muted">Digital Operations & AI Integration</div>
+                  <div class="text-xs text-muted">Digital Operations &amp; AI Integration</div>
                 </div>
               </div>
             </div>
@@ -315,10 +324,10 @@
         </div>
       </section>
 
-      <section id="skills" class="section section--skills">
+      <section id="skills" class="section section--skills" aria-labelledby="skills-title">
         <div class="section__eyebrow text-muted uppercase tracking-wider">模块 03</div>
         <div class="section__header">
-          <h2 class="section__title text-4xl font-orbitron font-bold">能力模块</h2>
+          <h2 id="skills-title" class="section__title text-4xl font-orbitron font-bold">能力模块</h2>
           <p class="section__description text-lg leading-relaxed text-muted mt-md">
             AI驱动工作流、数据运营与业务智能的整合能力。
           </p>
@@ -483,21 +492,21 @@
             <div class="grid grid-cols-3 gap-lg">
               <div class="text-center">
                 <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
-                  <span class="text-primary font-bold text-xl">📊</span>
+                  <span class="text-primary font-bold text-xl">&#128202;</span>
                 </div>
                 <div class="text-sm font-medium">数据结构</div>
                 <div class="text-xs text-muted">组织信息流</div>
               </div>
               <div class="text-center">
                 <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
-                  <span class="text-secondary font-bold text-xl">🔗</span>
+                  <span class="text-secondary font-bold text-xl">&#128279;</span>
                 </div>
                 <div class="text-sm font-medium">流程映射</div>
                 <div class="text-xs text-muted">可视化工作流</div>
               </div>
               <div class="text-center">
                 <div class="w-16 h-16 bg-teal bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
-                  <span class="text-teal font-bold text-xl">🤝</span>
+                  <span class="text-teal font-bold text-xl">&#129309;</span>
                 </div>
                 <div class="text-sm font-medium">协作中台</div>
                 <div class="text-xs text-muted">跨组协调</div>
@@ -507,10 +516,10 @@
         </div>
       </section>
 
-      <section id="projects" class="section section--projects">
+      <section id="projects" class="section section--projects" aria-labelledby="projects-title">
         <div class="section__eyebrow text-muted uppercase tracking-wider">模块 04</div>
         <div class="section__header">
-          <h2 class="section__title text-4xl font-orbitron font-bold">项目案例</h2>
+          <h2 id="projects-title" class="section__title text-4xl font-orbitron font-bold">项目案例</h2>
           <p class="section__description text-lg leading-relaxed text-muted mt-md">
             AI工作流实验、数据分析实战与业务优化实践。
           </p>
@@ -697,7 +706,7 @@
                 <div class="text-sm">流程周期缩短 35%</div>
               </div>
             </div>
-            <div class="flex gap-sm">
+            <div class="flex gap-sm flex-wrap">
               <div class="text-xs text-alert uppercase tracking-wide bg-alert bg-opacity-10 px-sm py-xs rounded">
                 学习：AI 决策支持系统
               </div>
@@ -709,10 +718,10 @@
         </div>
       </section>
 
-      <section id="resume" class="section section--resume">
+      <section id="resume" class="section section--resume" aria-labelledby="resume-title">
         <div class="section__eyebrow text-muted uppercase tracking-wider">模块 05</div>
         <div class="section__header">
-          <h2 class="section__title text-4xl font-orbitron font-bold">成长历程</h2>
+          <h2 id="resume-title" class="section__title text-4xl font-orbitron font-bold">成长历程</h2>
           <p class="section__description text-lg leading-relaxed text-muted mt-md">
             一份关于能力演进、AI实践与数据方法的系统记录。
           </p>
@@ -723,7 +732,7 @@
             <h3 class="text-lg font-orbitron font-semibold mt-md">业务流程筑基</h3>
             <p class="text-sm text-muted mt-sm">搭建采购与成本流程，建立结构化文档与协作交付。</p>
             <div class="mt-lg text-xs text-muted uppercase tracking-wide">
-              焦点：流程清晰 • 成本意识
+              焦点：流程清晰 &#8226; 成本意识
             </div>
           </article>
 
@@ -732,7 +741,7 @@
             <h3 class="text-lg font-orbitron font-semibold mt-md">数据觉察启动</h3>
             <p class="text-sm text-muted mt-sm">将业务数据转化为可执行的分析洞察，支撑决策闭环。</p>
             <div class="mt-lg text-xs text-muted uppercase tracking-wide">
-              焦点：数据结构 • 洞察生成
+              焦点：数据结构 &#8226; 洞察生成
             </div>
           </article>
 
@@ -741,13 +750,13 @@
             <h3 class="text-lg font-orbitron font-semibold mt-md">AI学习激活</h3>
             <p class="text-sm text-muted mt-sm">探索AI工具在工作流中的支持角色，实践自动化运营手段。</p>
             <div class="mt-lg text-xs text-muted uppercase tracking-wide">
-              焦点：AI工具 • 自动化实践
+              焦点：AI工具 &#8226; 自动化实践
             </div>
           </article>
         </div>
 
         <div class="timeline-panel card card--data motion-hover mt-2xl">
-          <div class="timeline-panel__header flex items-center justify-between mb-md">
+          <div class="timeline-panel__header">
             <div>
               <h3 class="text-xl font-orbitron font-semibold">能力演进</h3>
               <p class="text-sm text-muted mt-xs">从业务认知到AI驱动数字化运营的多层次成长路径。</p>
@@ -787,11 +796,11 @@
         </div>
       </section>
 
-      <section id="contact" class="section section--contact">
+      <section id="contact" class="section section--contact" aria-labelledby="contact-title">
         <div class="section__eyebrow text-muted uppercase tracking-wider">模块 06</div>
         <div class="section__header">
           <div class="section__title-block">
-            <h2 class="section__title text-4xl font-orbitron font-bold">通信终端</h2>
+            <h2 id="contact-title" class="section__title text-4xl font-orbitron font-bold">通信终端</h2>
             <p class="section__description text-lg leading-relaxed text-muted mt-md">
               面向合作与业务启动的终端式联络入口。
             </p>
@@ -804,10 +813,22 @@
               <span class="panel__tag">已就绪</span>
             </div>
             <div class="terminal-grid">
-              <div class="terminal-line"><span class="terminal-key">EMAIL</span><a href="mailto:example@domain.dev"><strong>example@domain.dev</strong></a></div>
-              <div class="terminal-line"><span class="terminal-key">GITHUB</span><a href="https://github.com/yourhandle" target="_blank" rel="noreferrer"><strong>github.com/yourhandle</strong></a></div>
-              <div class="terminal-line"><span class="terminal-key">LINKEDIN</span><a href="#" class="reserved"><strong>linkedin.com/in/yourname</strong></a></div>
-              <div class="terminal-line"><span class="terminal-key">RESUME</span><a href="resume.pdf" download class="terminal-action"><strong>DOWNLOAD PACKAGE</strong></a></div>
+              <div class="terminal-line">
+                <span class="terminal-key">EMAIL</span>
+                <a href="mailto:example@domain.dev"><strong>example@domain.dev</strong></a>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">GITHUB</span>
+                <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer"><strong>github.com/yourhandle</strong></a>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">LINKEDIN</span>
+                <a href="#" class="reserved" aria-label="LinkedIn 链接（预留）"><strong>linkedin.com/in/yourname</strong></a>
+              </div>
+              <div class="terminal-line">
+                <span class="terminal-key">RESUME</span>
+                <a href="resume.pdf" download class="terminal-action" aria-label="下载简历"><strong>DOWNLOAD PACKAGE</strong></a>
+              </div>
             </div>
             <div class="terminal-footer">&gt; 终端会话待命</div>
           </article>
@@ -822,13 +843,13 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="site-footer__row">
         <div>
           <span class="footer-brand">RHODES</span>
           <span class="footer-note">AI + 业务变革</span>
         </div>
-        <div class="footer-meta">© 2026 Rhodes Terminal</div>
+        <div class="footer-meta">&#169; 2026 Rhodes Terminal</div>
       </div>
     </footer>
   </div>
