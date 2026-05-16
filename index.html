@@ -1,859 +1,295 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Rhodes Terminal — 面向企业级运营的AI Workflow SaaS平台，将数据、流程与自动化融入业务决策。" />
-  <title>Rhodes Terminal — AI Workflow SaaS 官网</title>
+  <meta name="description" content="麦桐 · 前端开发学习者 · AI工具实践者 · 用户体验方向" />
+  <title>麦桐 · 个人简历</title>
 
-  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Noto+Sans+SC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <a href="#hero" class="skip-link">跳转到主要内容</a>
 
-  <div class="app-shell">
-    <header class="navbar" role="banner">
-      <div class="navbar__brand">
-        <span class="brand__logo font-orbitron text-surface-strong">RHODES</span>
-        <span class="brand__label text-secondary uppercase tracking-wider font-rajdhani">TERMINAL</span>
+  <header class="navbar" role="banner">
+    <div class="navbar__brand">
+      <span class="brand-name">麦桐</span>
+      <span class="brand-sep" aria-hidden="true">|</span>
+      <span class="brand-en">MAI TONG</span>
+    </div>
+
+    <nav class="navbar__nav" aria-label="主导航">
+      <button class="nav-toggle" aria-label="切换导航菜单" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav-toggle__line" aria-hidden="true"></span>
+        <span class="nav-toggle__line" aria-hidden="true"></span>
+        <span class="nav-toggle__line" aria-hidden="true"></span>
+      </button>
+      <ul class="nav-list" id="nav-menu" role="list">
+        <li><a href="#experience" data-scroll class="nav-link">经历</a></li>
+        <li><a href="#skills" data-scroll class="nav-link">能力</a></li>
+        <li><a href="#contact" data-scroll class="nav-link">联系</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar__status" aria-label="求职状态：随时入职">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="status-label">随时入职</span>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="hero" class="section hero" aria-labelledby="hero-name">
+      <div class="hero__stripes" aria-hidden="true">
+        <span class="stripe stripe--cyan"></span>
+        <span class="stripe stripe--red"></span>
+        <span class="stripe stripe--lime"></span>
       </div>
-      <nav class="navbar__nav" aria-label="主导航">
-        <button class="nav-toggle" aria-label="切换导航" aria-expanded="false" aria-controls="nav-menu">
-          <span class="nav-toggle__line" aria-hidden="true"></span>
-          <span class="nav-toggle__line" aria-hidden="true"></span>
-          <span class="nav-toggle__line" aria-hidden="true"></span>
-        </button>
-        <ul class="nav-list" id="nav-menu" role="menubar">
-          <li role="none"><a href="#about" data-scroll class="nav-link" role="menuitem">关于</a></li>
-          <li role="none"><a href="#skills" data-scroll class="nav-link" role="menuitem">能力</a></li>
-          <li role="none"><a href="#projects" data-scroll class="nav-link" role="menuitem">案例</a></li>
-          <li role="none"><a href="#resume" data-scroll class="nav-link" role="menuitem">历程</a></li>
-          <li role="none"><a href="#contact" data-scroll class="nav-link" role="menuitem">联系</a></li>
-        </ul>
-      </nav>
-      <div class="navbar__status" aria-hidden="true">
-        <span class="status-indicator status-indicator--online"></span>
-        <span class="status-text text-muted uppercase tracking-wide font-rajdhani">SYSTEM ACTIVE</span>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__eyebrow" aria-hidden="true">
+            <span class="eyebrow-code">PERSONNEL FILE</span>
+            <span class="eyebrow-line"></span>
+            <span class="eyebrow-code">档案 // 01</span>
+          </div>
+
+          <h1 class="hero__name" id="hero-name">麦桐</h1>
+
+          <div class="hero__roles" aria-label="目标岗位方向">
+            <span>前端开发学习者</span>
+            <span class="role-dot" aria-hidden="true">·</span>
+            <span>AI工具实践者</span>
+            <span class="role-dot" aria-hidden="true">·</span>
+            <span>用户体验方向</span>
+          </div>
+
+          <div class="hero__divider" aria-hidden="true"></div>
+
+          <p class="hero__desc">
+            工程管理专业背景，毕业后尝试过采购、经营协助、工程造价等不同岗位。<br>
+            相比执行业务本身，我更关注工具、流程和效率问题，也更享受做出可见的产出物。<br>
+            接触 AI 工具后，开始持续使用 ChatGPT、Claude 辅助信息整理、文档优化及个人项目开发。
+          </p>
+
+          <div class="hero__actions">
+            <a href="#contact" data-scroll class="btn btn--primary">发送联系请求</a>
+            <a href="麦桐-简历.pdf" download class="btn btn--ghost">下载简历</a>
+          </div>
+
+          <div class="hero__meta" aria-label="基本信息">
+            <span>📍 东莞（可异地）</span>
+            <span class="meta-sep" aria-hidden="true">·</span>
+            <span>25年毕业</span>
+            <span class="meta-sep" aria-hidden="true">·</span>
+            <span>GitHub：wuxiiing</span>
+          </div>
+        </div>
+
+        <aside class="hero__dossier card" aria-label="快速联系信息">
+          <div class="dossier__header">
+            <span class="dossier__label">QUICK ACCESS</span>
+            <span class="dossier__tag" data-live-clock>北京时间 --:--:--</span>
+          </div>
+          <dl class="dossier__grid">
+            <div class="dossier__row">
+              <dt class="dossier__key">PHONE</dt>
+              <dd class="dossier__val"><a href="tel:13038880351">13038880351</a></dd>
+            </div>
+            <div class="dossier__row">
+              <dt class="dossier__key">EMAIL</dt>
+              <dd class="dossier__val"><a href="mailto:462380155@qq.com">462380155@qq.com</a></dd>
+            </div>
+            <div class="dossier__row">
+              <dt class="dossier__key">LOCATION</dt>
+              <dd class="dossier__val">东莞（可异地）</dd>
+            </div>
+            <div class="dossier__row">
+              <dt class="dossier__key">GITHUB</dt>
+              <dd class="dossier__val"><a href="https://github.com/wuxiiing" target="_blank" rel="noopener">wuxiiing</a></dd>
+            </div>
+            <div class="dossier__row">
+              <dt class="dossier__key">EDU</dt>
+              <dd class="dossier__val">天津城建大学 · 工程管理</dd>
+            </div>
+            <div class="dossier__row">
+              <dt class="dossier__key">STATUS</dt>
+              <dd class="dossier__val dossier__val--online">
+                <span class="online-dot" aria-hidden="true"></span>
+                随时入职
+              </dd>
+            </div>
+          </dl>
+        </aside>
       </div>
-    </header>
+    </section>
 
-    <main class="page-content" id="main-content">
-      <section id="hero" class="section section--hero" aria-labelledby="hero-title">
-        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 01</div>
-        <div class="section__header">
-          <div class="section__intro animate-fade-in">
-            <p class="section__prefix text-sm uppercase tracking-wider text-muted font-rajdhani">AI 工作台</p>
-            <h1 id="hero-title" class="section__title text-5xl font-orbitron font-bold leading-tight text-surface-strong">
-              未来业务级<br />
-              <span class="text-primary">AI Workflow SaaS</span>
-            </h1>
-            <p class="section__description text-lg leading-relaxed text-muted mt-lg">
-              面向企业级运营的AI产品中台，将数据、流程与自动化融入业务决策，持续驱动组织效率与智能化生长。
-            </p>
-            <div class="section__actions flex gap-md mt-xl">
-              <a class="btn btn--primary btn--lg hover-glow-alert" href="#contact" data-scroll>
-                <span class="font-semibold">开启合作</span>
-              </a>
-              <a class="btn btn--secondary btn--lg" href="#about" data-scroll>
-                <span class="font-medium">了解能力</span>
-              </a>
-            </div>
-          </div>
-          <div class="section__visual grid grid-cols-2 gap-lg animate-slide-up">
-            <!-- AI Dashboard Card -->
-            <div class="card card--terminal motion-hover">
-              <div class="p-lg">
-                <div class="flex justify-between items-center mb-md">
-                  <span class="text-xs uppercase tracking-wider text-secondary font-rajdhani">智能概览</span>
-                  <div class="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-                </div>
-                <div class="text-2xl font-orbitron font-bold text-surface-muted mb-sm">12</div>
-                <div class="text-xs text-muted uppercase tracking-wide">活跃流程</div>
-                <div class="mt-md grid grid-cols-2 gap-xs">
-                  <div class="text-center">
-                    <div class="text-lg font-bold text-primary">85%</div>
-                    <div class="text-xs text-muted">效率</div>
-                  </div>
-                  <div class="text-center">
-                    <div class="text-lg font-bold text-secondary">24</div>
-                    <div class="text-xs text-muted">日均任务</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Workflow UI Card -->
-            <div class="card card--data motion-hover">
-              <div class="p-lg">
-                <div class="flex justify-between items-center mb-md">
-                  <span class="text-xs uppercase tracking-wider text-primary font-rajdhani">工作流引擎</span>
-                  <span class="text-xs text-alert font-mono">v2.1</span>
-                </div>
-                <div class="space-y-sm">
-                  <div class="flex items-center gap-sm">
-                    <div class="w-2 h-2 bg-primary rounded-full"></div>
-                    <span class="text-sm">数据处理</span>
-                  </div>
-                  <div class="flex items-center gap-sm">
-                    <div class="w-2 h-2 bg-secondary rounded-full"></div>
-                    <span class="text-sm">AI 分析</span>
-                  </div>
-                  <div class="flex items-center gap-sm">
-                    <div class="w-2 h-2 bg-gold rounded-full"></div>
-                    <span class="text-sm">报告生成</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Data Analysis Card -->
-            <div class="card card--data motion-hover">
-              <div class="p-lg">
-                <div class="flex justify-between items-center mb-md">
-                  <span class="text-xs uppercase tracking-wider text-teal font-rajdhani">数据洞察</span>
-                  <span class="text-xs text-muted font-mono">LIVE</span>
-                </div>
-                <div class="text-3xl font-orbitron font-bold text-teal mb-sm">+127%</div>
-                <div class="text-xs text-muted uppercase tracking-wide mb-md">生产力提升</div>
-                <div class="h-1 bg-surface-muted rounded-full overflow-hidden">
-                  <div class="h-full bg-teal rounded-full animate-pulse" style="width: 75%"></div>
-                </div>
-              </div>
-            </div>
-
-            <!-- AI Terminal Module -->
-            <div class="card card--terminal motion-hover">
-              <div class="p-lg">
-                <div class="flex justify-between items-center mb-md">
-                  <span class="text-xs uppercase tracking-wider text-alert font-rajdhani">AI 终端</span>
-                  <div class="flex gap-xs">
-                    <div class="w-1-5 h-1-5 bg-alert rounded-full"></div>
-                    <div class="w-1-5 h-1-5 bg-secondary rounded-full"></div>
-                    <div class="w-1-5 h-1-5 bg-primary rounded-full"></div>
-                  </div>
-                </div>
-                <div class="font-mono text-xs text-surface-muted leading-loose">
-                  <div>&gt; 初始化 AI 核心...</div>
-                  <div>&gt; 载入数据模型...</div>
-                  <div>&gt; 系统准备就绪</div>
-                  <div class="text-primary">&gt;&gt; 等待用户指令...</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section section--about" aria-labelledby="about-title">
-        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 02</div>
-        <div class="section__header">
-          <div class="section__title-block">
-            <h2 id="about-title" class="section__title text-4xl font-orbitron font-bold">能力概览</h2>
-            <p class="section__description text-lg leading-relaxed text-muted mt-md">
-              面向企业级AI流程的业务能力、数据觉察与系统思维。
-            </p>
-          </div>
-        </div>
-        <div class="section__grid grid grid-cols-3 gap-xl animate-fade-in">
-          <!-- Business Background Module -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center gap-md mb-lg">
-              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                <span class="text-surface font-bold text-lg">B</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-orbitron font-semibold">业务基础</h3>
-                <span class="text-xs text-muted uppercase tracking-wide">核心能力</span>
-              </div>
-            </div>
-            <div class="space-y-sm">
-              <div class="flex justify-between items-center">
-                <span class="text-sm text-muted">采购系统</span>
-                <span class="text-sm font-medium">高级</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-sm text-muted">成本管理</span>
-                <span class="text-sm font-medium">专家</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-sm text-muted">流程优化</span>
-                <span class="text-sm font-medium">精通</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Data Awareness Module -->
-          <div class="card card--data motion-hover">
-            <div class="flex items-center justify-between mb-lg">
-              <h3 class="text-lg font-orbitron font-semibold">数据意识</h3>
-              <span class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded">ACTIVE</span>
-            </div>
-            <div class="space-y-md">
-              <div class="text-center">
-                <div class="text-2xl font-orbitron font-bold text-teal">94%</div>
-                <div class="text-xs text-muted uppercase tracking-wide">数据驱动决策</div>
-              </div>
-              <div class="h-1 bg-surface-muted rounded-full overflow-hidden">
-                <div class="h-full bg-teal rounded-full" style="width: 94%"></div>
-              </div>
-              <div class="grid grid-cols-2 gap-sm text-center">
-                <div>
-                  <div class="text-lg font-bold">50+</div>
-                  <div class="text-xs text-muted">已分析报告</div>
-                </div>
-                <div>
-                  <div class="text-lg font-bold">85%</div>
-                  <div class="text-xs text-muted">效率提升</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- AI Learning Capability -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center gap-md mb-lg">
-              <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-                <span class="text-surface font-bold text-lg">AI</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-orbitron font-semibold">AI整合能力</h3>
-                <span class="text-xs text-muted uppercase tracking-wide">学习进度</span>
-              </div>
-            </div>
-            <div class="space-y-sm">
-              <div class="flex items-center gap-sm">
-                <div class="w-2 h-2 bg-secondary rounded-full"></div>
-                <span class="text-sm">工具采用率：75%</span>
-              </div>
-              <div class="flex items-center gap-sm">
-                <div class="w-2 h-2 bg-primary rounded-full"></div>
-                <span class="text-sm">工作流自动化：60%</span>
-              </div>
-              <div class="flex items-center gap-sm">
-                <div class="w-2 h-2 bg-gold rounded-full"></div>
-                <span class="text-sm">高级应用：40%</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- System Thinking Module -->
-          <div class="card card--data motion-hover">
-            <h3 class="text-lg font-orbitron font-semibold mb-lg">体系架构</h3>
-            <div class="space-y-md">
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">信息结构化</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-primary rounded-full"></div>
-                  <div class="w-2 h-2 bg-primary rounded-full"></div>
-                  <div class="w-2 h-2 bg-primary rounded-full"></div>
-                  <div class="w-2 h-2 bg-primary rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">流程映射</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
-                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
-                  <div class="w-2 h-2 bg-secondary rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">跨组协同</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Digital Transformation Interest -->
-          <div class="card card--panel hover-lift">
-            <div class="flex items-center gap-md mb-lg">
-              <div class="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
-                <span class="text-surface font-bold text-lg">DX</span>
-              </div>
-              <div>
-                <h3 class="text-lg font-orbitron font-semibold">Digital Evolution</h3>
-                <span class="text-xs text-muted uppercase tracking-wide">Transformation Focus</span>
-              </div>
-            </div>
-            <div class="space-y-sm">
-              <div class="text-sm text-muted">Current Interests:</div>
-              <div class="flex flex-wrap gap-xs">
-                <span class="text-xs bg-primary bg-opacity-10 text-primary px-sm py-xs rounded">AI Operations</span>
-                <span class="text-xs bg-secondary bg-opacity-10 text-secondary px-sm py-xs rounded">Data Strategy</span>
-                <span class="text-xs bg-teal bg-opacity-10 text-teal px-sm py-xs rounded">Process Automation</span>
-                <span class="text-xs bg-gold bg-opacity-10 text-gold px-sm py-xs rounded">Digital Workflows</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Timeline Module -->
-          <div class="card card--data hover-lift">
-            <h3 class="text-lg font-orbitron font-semibold mb-lg">Evolution Timeline</h3>
-            <div class="space-y-md">
-              <div class="flex items-start gap-sm">
-                <div class="w-2 h-2 bg-primary rounded-full mt-sm"></div>
-                <div>
-                  <div class="text-sm font-medium">2021-2023</div>
-                  <div class="text-xs text-muted">Business Operations &amp; Cost Analysis</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-sm">
-                <div class="w-2 h-2 bg-secondary rounded-full mt-sm"></div>
-                <div>
-                  <div class="text-sm font-medium">2023-Present</div>
-                  <div class="text-xs text-muted">AI Tools &amp; Data Consciousness</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-sm">
-                <div class="w-2 h-2 bg-gold rounded-full mt-sm"></div>
-                <div>
-                  <div class="text-sm font-medium">Future</div>
-                  <div class="text-xs text-muted">Digital Operations &amp; AI Integration</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section section--skills" aria-labelledby="skills-title">
-        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 03</div>
-        <div class="section__header">
-          <h2 id="skills-title" class="section__title text-4xl font-orbitron font-bold">能力模块</h2>
-          <p class="section__description text-lg leading-relaxed text-muted mt-md">
-            AI驱动工作流、数据运营与业务智能的整合能力。
-          </p>
-        </div>
-        <div class="section__grid grid grid-cols-2 gap-xl animate-fade-in">
-          <!-- AI Tool Stack -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center justify-between mb-lg">
-              <div class="flex items-center gap-md">
-                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                  <span class="text-surface font-bold text-lg">AI</span>
-                </div>
-                <div>
-                  <h3 class="text-lg font-orbitron font-semibold">AI 工具栈</h3>
-                  <span class="text-xs text-muted uppercase tracking-wide">集成层</span>
-                </div>
-              </div>
-              <span class="text-xs text-primary uppercase tracking-wide bg-primary bg-opacity-10 px-sm py-xs rounded">ACTIVE</span>
-            </div>
-            <div class="grid grid-cols-2 gap-sm">
-              <div class="text-center p-sm bg-surface-muted rounded">
-                <div class="text-sm font-medium">ChatGPT</div>
-                <div class="text-xs text-muted">内容生成</div>
-              </div>
-              <div class="text-center p-sm bg-surface-muted rounded">
-                <div class="text-sm font-medium">Claude</div>
-                <div class="text-xs text-muted">分析助手</div>
-              </div>
-              <div class="text-center p-sm bg-surface-muted rounded">
-                <div class="text-sm font-medium">Coze</div>
-                <div class="text-xs text-muted">工作流搭建</div>
-              </div>
-              <div class="text-center p-sm bg-surface-muted rounded">
-                <div class="text-sm font-medium">Cursor</div>
-                <div class="text-xs text-muted">代码助手</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Data Capability Panels -->
-          <div class="card card--data motion-hover">
-            <div class="flex items-center justify-between mb-lg">
-              <h3 class="text-lg font-orbitron font-semibold">数据运营</h3>
-              <span class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded">CORE</span>
-            </div>
-            <div class="space-y-md">
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">SQL 基础</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-surface-muted rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">数据分析</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">Excel 高级</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                </div>
-              </div>
-              <div class="flex items-center justify-between">
-                <span class="text-sm text-muted">Power BI</span>
-                <div class="flex gap-xs">
-                  <div class="w-2 h-2 bg-teal rounded-full"></div>
-                  <div class="w-2 h-2 bg-surface-muted rounded-full"></div>
-                  <div class="w-2 h-2 bg-surface-muted rounded-full"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Workflow Modules -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center justify-between mb-lg">
-              <div class="flex items-center gap-md">
-                <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center">
-                  <span class="text-surface font-bold text-lg">WF</span>
-                </div>
-                <div>
-                  <h3 class="text-lg font-orbitron font-semibold">工作流自动化</h3>
-                  <span class="text-xs text-muted uppercase tracking-wide">流程层</span>
-                </div>
-              </div>
-              <span class="text-xs text-secondary uppercase tracking-wide bg-secondary bg-opacity-10 px-sm py-xs rounded">GROWING</span>
-            </div>
-            <div class="space-y-sm">
-              <div class="flex items-center gap-sm">
-                <div class="w-3 h-3 bg-secondary rounded-full flex-shrink-0"></div>
-                <div>
-                  <div class="text-sm font-medium">文档处理</div>
-                  <div class="text-xs text-muted">AI辅助内容生成</div>
-                </div>
-              </div>
-              <div class="flex items-center gap-sm">
-                <div class="w-3 h-3 bg-primary rounded-full flex-shrink-0"></div>
-                <div>
-                  <div class="text-sm font-medium">数据管道</div>
-                  <div class="text-xs text-muted">自动化报表流程</div>
-                </div>
-              </div>
-              <div class="flex items-center gap-sm">
-                <div class="w-3 h-3 bg-gold rounded-full flex-shrink-0"></div>
-                <div>
-                  <div class="text-sm font-medium">任务协同</div>
-                  <div class="text-xs text-muted">跨组自动调度</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Business Intelligence Cards -->
-          <div class="card card--data motion-hover">
-            <div class="flex items-center justify-between mb-lg">
-              <h3 class="text-lg font-orbitron font-semibold">商业智能</h3>
-              <span class="text-xs text-gold uppercase tracking-wide bg-gold bg-opacity-10 px-sm py-xs rounded">EXPERT</span>
-            </div>
-            <div class="grid grid-cols-2 gap-md">
-              <div class="text-center">
-                <div class="text-2xl font-orbitron font-bold text-gold">8+</div>
-                <div class="text-xs text-muted uppercase tracking-wide">Years Experience</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-orbitron font-bold text-gold">50+</div>
-                <div class="text-xs text-muted uppercase tracking-wide">Process Optimized</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-orbitron font-bold text-gold">85%</div>
-                <div class="text-xs text-muted uppercase tracking-wide">Efficiency Gain</div>
-              </div>
-              <div class="text-center">
-                <div class="text-2xl font-orbitron font-bold text-gold">100%</div>
-                <div class="text-xs text-muted uppercase tracking-wide">Digital Mindset</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Information Architecture -->
-          <div class="card card--panel motion-hover col-span-2">
-            <div class="flex items-center justify-between mb-lg">
-              <div class="flex items-center gap-md">
-                <div class="w-12 h-12 bg-alert rounded-lg flex items-center justify-center">
-                  <span class="text-surface font-bold text-lg">IA</span>
-                </div>
-                <div>
-                  <h3 class="text-lg font-orbitron font-semibold">信息架构</h3>
-                  <span class="text-xs text-muted uppercase tracking-wide">结构层</span>
-                </div>
-              </div>
-              <span class="text-xs text-alert uppercase tracking-wide bg-alert bg-opacity-10 px-sm py-xs rounded">SYSTEM</span>
-            </div>
-            <div class="grid grid-cols-3 gap-lg">
-              <div class="text-center">
-                <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
-                  <span class="text-primary font-bold text-xl">&#128202;</span>
-                </div>
-                <div class="text-sm font-medium">数据结构</div>
-                <div class="text-xs text-muted">组织信息流</div>
-              </div>
-              <div class="text-center">
-                <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
-                  <span class="text-secondary font-bold text-xl">&#128279;</span>
-                </div>
-                <div class="text-sm font-medium">流程映射</div>
-                <div class="text-xs text-muted">可视化工作流</div>
-              </div>
-              <div class="text-center">
-                <div class="w-16 h-16 bg-teal bg-opacity-10 rounded-lg flex items-center justify-center mx-auto mb-sm">
-                  <span class="text-teal font-bold text-xl">&#129309;</span>
-                </div>
-                <div class="text-sm font-medium">协作中台</div>
-                <div class="text-xs text-muted">跨组协调</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="section section--projects" aria-labelledby="projects-title">
-        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 04</div>
-        <div class="section__header">
-          <h2 id="projects-title" class="section__title text-4xl font-orbitron font-bold">项目案例</h2>
-          <p class="section__description text-lg leading-relaxed text-muted mt-md">
-            AI工作流实验、数据分析实战与业务优化实践。
-          </p>
-        </div>
-        <div class="section__grid grid grid-cols-2 gap-xl animate-fade-in">
-          <!-- AI Workflow Experiment -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--cyan">AI 工作流</span>
-              <span class="text-xs text-muted uppercase tracking-wide">实验</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">报告自动化流水线</h3>
-            <div class="space-y-sm mb-md">
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">目标：</span>
-                <span class="text-sm">自动生成报告</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">工具：</span>
-                <span class="text-sm">ChatGPT + Excel 宏</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">成果：</span>
-                <span class="text-sm">人工工时减少 60%</span>
-              </div>
-            </div>
-            <div class="text-xs text-secondary uppercase tracking-wide bg-secondary bg-opacity-10 px-sm py-xs rounded inline-block">
-              学习：AI辅助内容结构化
-            </div>
-          </div>
-
-          <!-- Data Analysis Practice -->
-          <div class="card card--data motion-hover">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--lime">数据分析</span>
-              <span class="text-xs text-muted uppercase tracking-wide">实践</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">成本趋势可视化</h3>
-            <div class="space-y-sm mb-md">
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">目标：</span>
-                <span class="text-sm">发现成本模式</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">工具：</span>
-                <span class="text-sm">Excel + Power BI</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">成果：</span>
-                <span class="text-sm">发现 15% 节省空间</span>
-              </div>
-            </div>
-            <div class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded inline-block">
-              学习：数据故事化表达
-            </div>
-          </div>
-
-          <!-- SQL Learning Case -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--primary">SQL 学习</span>
-              <span class="text-xs text-muted uppercase tracking-wide">案例</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">采购数据查询</h3>
-            <div class="space-y-sm mb-md">
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">目标：</span>
-                <span class="text-sm">提取供应商绩效数据</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">工具：</span>
-                <span class="text-sm">SQL + 数据库浏览器</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">成果：</span>
-                <span class="text-sm">月报自动化生成</span>
-              </div>
-            </div>
-            <div class="text-xs text-primary uppercase tracking-wide bg-primary bg-opacity-10 px-sm py-xs rounded inline-block">
-              学习：查询优化与关联
-            </div>
-          </div>
-
-          <!-- Automation Office Flow -->
-          <div class="card card--data motion-hover">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--secondary">自动化</span>
-              <span class="text-xs text-muted uppercase tracking-wide">实施</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">邮件处理工作流</h3>
-            <div class="space-y-sm mb-md">
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">目标：</span>
-                <span class="text-sm">简化沟通流程</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">工具：</span>
-                <span class="text-sm">Claude + Zapier</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">成果：</span>
-                <span class="text-sm">响应时间缩短 40%</span>
-              </div>
-            </div>
-            <div class="text-xs text-secondary uppercase tracking-wide bg-secondary bg-opacity-10 px-sm py-xs rounded inline-block">
-              学习：API集成与触发器
-            </div>
-          </div>
-
-          <!-- Information Organization System -->
-          <div class="card card--panel motion-hover">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--gold">信息架构</span>
-              <span class="text-xs text-muted uppercase tracking-wide">系统</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">知识库结构</h3>
-            <div class="space-y-sm mb-md">
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">目标：</span>
-                <span class="text-sm">组织团队知识</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">工具：</span>
-                <span class="text-sm">Notion + AI 分类</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">成果：</span>
-                <span class="text-sm">信息检索效率提升 70%</span>
-              </div>
-            </div>
-            <div class="text-xs text-gold uppercase tracking-wide bg-gold bg-opacity-10 px-sm py-xs rounded inline-block">
-              学习：标签系统与分类设计
-            </div>
-          </div>
-
-          <!-- Cost Analysis Approach -->
-          <div class="card card--data motion-hover">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--teal">成本分析</span>
-              <span class="text-xs text-muted uppercase tracking-wide">方法</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">预算差异仪表盘</h3>
-            <div class="space-y-sm mb-md">
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">目标：</span>
-                <span class="text-sm">监控财务表现</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">工具：</span>
-                <span class="text-sm">Excel + 数据可视化</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-muted">成果：</span>
-                <span class="text-sm">提前发现成本超支</span>
-              </div>
-            </div>
-            <div class="text-xs text-teal uppercase tracking-wide bg-teal bg-opacity-10 px-sm py-xs rounded inline-block">
-              学习：财务数据解读
-            </div>
-          </div>
-
-          <!-- AI-Assisted Business Process Optimization -->
-          <div class="card card--panel motion-hover col-span-2">
-            <div class="flex items-center justify-between mb-md">
-              <span class="status-badge status-badge--alert">AI 优化</span>
-              <span class="text-xs text-muted uppercase tracking-wide">集成</span>
-            </div>
-            <h3 class="text-lg font-orbitron font-semibold mb-sm">采购工作流增强</h3>
-            <div class="grid grid-cols-2 gap-md mb-md">
-              <div>
-                <div class="text-sm text-muted mb-xs">目标：</div>
-                <div class="text-sm">优化供应商选择流程</div>
-              </div>
-              <div>
-                <div class="text-sm text-muted mb-xs">工具：</div>
-                <div class="text-sm">Coze + 决策矩阵</div>
-              </div>
-              <div>
-                <div class="text-sm text-muted mb-xs">成果：</div>
-                <div class="text-sm">决策准确率提高 25%</div>
-              </div>
-              <div>
-                <div class="text-sm text-muted mb-xs">影响：</div>
-                <div class="text-sm">流程周期缩短 35%</div>
-              </div>
-            </div>
-            <div class="flex gap-sm flex-wrap">
-              <div class="text-xs text-alert uppercase tracking-wide bg-alert bg-opacity-10 px-sm py-xs rounded">
-                学习：AI 决策支持系统
-              </div>
-              <div class="text-xs text-primary uppercase tracking-wide bg-primary bg-opacity-10 px-sm py-xs rounded">
-                结果：可扩展业务智能框架
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="resume" class="section section--resume" aria-labelledby="resume-title">
-        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 05</div>
-        <div class="section__header">
-          <h2 id="resume-title" class="section__title text-4xl font-orbitron font-bold">成长历程</h2>
-          <p class="section__description text-lg leading-relaxed text-muted mt-md">
-            一份关于能力演进、AI实践与数据方法的系统记录。
-          </p>
-        </div>
-        <div class="section__grid grid grid-cols-3 gap-xl animate-fade-in">
-          <article class="card card--panel motion-hover">
-            <span class="status-badge status-badge--primary">2021</span>
-            <h3 class="text-lg font-orbitron font-semibold mt-md">业务流程筑基</h3>
-            <p class="text-sm text-muted mt-sm">搭建采购与成本流程，建立结构化文档与协作交付。</p>
-            <div class="mt-lg text-xs text-muted uppercase tracking-wide">
-              焦点：流程清晰 &#8226; 成本意识
-            </div>
-          </article>
-
-          <article class="card card--data motion-hover">
-            <span class="status-badge status-badge--teal">2022</span>
-            <h3 class="text-lg font-orbitron font-semibold mt-md">数据觉察启动</h3>
-            <p class="text-sm text-muted mt-sm">将业务数据转化为可执行的分析洞察，支撑决策闭环。</p>
-            <div class="mt-lg text-xs text-muted uppercase tracking-wide">
-              焦点：数据结构 &#8226; 洞察生成
-            </div>
-          </article>
-
-          <article class="card card--panel motion-hover">
-            <span class="status-badge status-badge--secondary">2023</span>
-            <h3 class="text-lg font-orbitron font-semibold mt-md">AI学习激活</h3>
-            <p class="text-sm text-muted mt-sm">探索AI工具在工作流中的支持角色，实践自动化运营手段。</p>
-            <div class="mt-lg text-xs text-muted uppercase tracking-wide">
-              焦点：AI工具 &#8226; 自动化实践
-            </div>
-          </article>
-        </div>
-
-        <div class="timeline-panel card card--data motion-hover mt-2xl">
-          <div class="timeline-panel__header">
-            <div>
-              <h3 class="text-xl font-orbitron font-semibold">能力演进</h3>
-              <p class="text-sm text-muted mt-xs">从业务认知到AI驱动数字化运营的多层次成长路径。</p>
-            </div>
-            <span class="text-xs text-gold uppercase tracking-wide bg-gold bg-opacity-10 px-sm py-xs rounded">系统记录</span>
-          </div>
-          <div class="timeline-flow">
-            <div class="timeline-node">
-              <span class="timeline-node__marker bg-primary"></span>
-              <div>
-                <div class="text-sm font-medium">业务认知</div>
-                <div class="text-xs text-muted">以采购、成本与工程为基础构建业务理解。</div>
-              </div>
-            </div>
-            <div class="timeline-node">
-              <span class="timeline-node__marker bg-secondary"></span>
-              <div>
-                <div class="text-sm font-medium">数据结构化</div>
-                <div class="text-xs text-muted">编排更清晰的数据格式，支持分析与汇报。</div>
-              </div>
-            </div>
-            <div class="timeline-node">
-              <span class="timeline-node__marker bg-teal"></span>
-              <div>
-                <div class="text-sm font-medium">AI工作流</div>
-                <div class="text-xs text-muted">让工具支撑例行任务与决策准备。</div>
-              </div>
-            </div>
-            <div class="timeline-node">
-              <span class="timeline-node__marker bg-alert"></span>
-              <div>
-                <div class="text-sm font-medium">数字化转型</div>
-                <div class="text-xs text-muted">连接系统、数据与流程，构建未来运营框架。</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="section section--contact" aria-labelledby="contact-title">
-        <div class="section__eyebrow text-muted uppercase tracking-wider">模块 06</div>
-        <div class="section__header">
-          <div class="section__title-block">
-            <h2 id="contact-title" class="section__title text-4xl font-orbitron font-bold">通信终端</h2>
-            <p class="section__description text-lg leading-relaxed text-muted mt-md">
-              面向合作与业务启动的终端式联络入口。
-            </p>
-          </div>
-        </div>
-        <div class="section__grid split-grid">
-          <article class="card panel terminal-panel contact-terminal">
-            <div class="panel__meta">
-              <span class="panel__label">通信节点</span>
-              <span class="panel__tag">已就绪</span>
-            </div>
-            <div class="terminal-grid">
-              <div class="terminal-line">
-                <span class="terminal-key">EMAIL</span>
-                <a href="mailto:example@domain.dev"><strong>example@domain.dev</strong></a>
-              </div>
-              <div class="terminal-line">
-                <span class="terminal-key">GITHUB</span>
-                <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer"><strong>github.com/yourhandle</strong></a>
-              </div>
-              <div class="terminal-line">
-                <span class="terminal-key">LINKEDIN</span>
-                <a href="#" class="reserved" aria-label="LinkedIn 链接（预留）"><strong>linkedin.com/in/yourname</strong></a>
-              </div>
-              <div class="terminal-line">
-                <span class="terminal-key">RESUME</span>
-                <a href="resume.pdf" download class="terminal-action" aria-label="下载简历"><strong>DOWNLOAD PACKAGE</strong></a>
-              </div>
-            </div>
-            <div class="terminal-footer">&gt; 终端会话待命</div>
-          </article>
-          <article class="card panel terminal-panel contact-panel contact-summary">
-            <div class="contact-summary__heading text-xs uppercase tracking-wider text-secondary">系统状态</div>
-            <div class="contact-summary__entry"><span>端口</span><strong>COMMS-01</strong></div>
-            <div class="contact-summary__entry"><span>安全</span><strong>加密通道</strong></div>
-            <div class="contact-summary__entry"><span>同步</span><strong>0.45s</strong></div>
-            <div class="contact-summary__entry"><span>队列</span><strong>待部署</strong></div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer" role="contentinfo">
-      <div class="site-footer__row">
-        <div>
-          <span class="footer-brand">RHODES</span>
-          <span class="footer-note">AI + 业务变革</span>
-        </div>
-        <div class="footer-meta">&#169; 2026 Rhodes Terminal</div>
+    <section id="experience" class="section" aria-labelledby="exp-title">
+      <div class="section__header">
+        <span class="section__num" aria-hidden="true">// 02</span>
+        <h2 class="section__title" id="exp-title">实习经历</h2>
+        <div class="section__rule" aria-hidden="true"></div>
       </div>
-    </footer>
-  </div>
+
+      <div class="exp-list">
+        <article class="exp-card card">
+          <div class="exp-card__header">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">广东烛光新能源科技有限公司</h3>
+              <div class="exp-card__meta">
+                <span class="exp-card__role">采购助理</span>
+                <span class="exp-card__period">2026.03 — 2026.04</span>
+              </div>
+            </div>
+            <span class="exp-card__industry">制造业 · 供应链</span>
+          </div>
+          <p class="exp-card__narrative">协助处理采购需求拆解与信息整理工作；参与供应商沟通及采购流程跟进；使用 Excel 整理采购数据及台账记录。接触供应链业务流程，对采购协同及跨部门流转形成基础理解。</p>
+          <div class="exp-card__tags">
+            <span class="tag">Excel</span>
+            <span class="tag">采购信息整理</span>
+            <span class="tag">供应商沟通</span>
+          </div>
+        </article>
+
+        <article class="exp-card card">
+          <div class="exp-card__header">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">安信二手车（家庭门店）</h3>
+              <div class="exp-card__meta">
+                <span class="exp-card__role">经营协助</span>
+                <span class="exp-card__period">2025.07 — 2025.12</span>
+              </div>
+            </div>
+            <span class="exp-card__industry">汽车流通 · 经营支持</span>
+          </div>
+          <p class="exp-card__narrative">协助整理进销存及经营数据；参与基础费用统计与数据记录；使用 Excel 完成数据汇总，使用金蝶系统录入部分财务信息。建立对经营流程及业务数据整理逻辑的基础认知。</p>
+          <div class="exp-card__tags">
+            <span class="tag">进销存整理</span>
+            <span class="tag">Excel</span>
+            <span class="tag">金蝶系统</span>
+          </div>
+        </article>
+
+        <article class="exp-card card exp-card--secondary">
+          <div class="exp-card__header">
+            <div class="exp-card__info">
+              <h3 class="exp-card__company">河南中安建设工程有限公司</h3>
+              <div class="exp-card__meta">
+                <span class="exp-card__role">工程造价助理</span>
+                <span class="exp-card__period">2025.01 — 2025.02</span>
+              </div>
+            </div>
+            <span class="exp-card__industry">建筑工程</span>
+          </div>
+          <p class="exp-card__narrative">协助整理建筑材料价格信息；参与工程资料及报价内容整理；接触工程成本及信息汇总工作，提升数据整理与文档处理能力。</p>
+          <div class="exp-card__tags">
+            <span class="tag">造价分析</span>
+            <span class="tag">文档整理</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="section__header">
+        <span class="section__num" aria-hidden="true">// 03</span>
+        <h2 class="section__title" id="skills-title">能力模块</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group card">
+          <h3 class="skill-group__title">AI 工具</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">ChatGPT Plus / Claude / DeepSeek V4</span><span class="skill-level skill-level--active">持续使用</span></li>
+            <li class="skill-item"><span class="skill-name">信息整理 / 内容优化</span><span class="skill-level skill-level--active">常用</span></li>
+            <li class="skill-item"><span class="skill-name">项目辅助与问题排查</span><span class="skill-level skill-level--basic">基础</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group card">
+          <h3 class="skill-group__title">前端与工具</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">HTML / CSS</span><span class="skill-level skill-level--learning">学习中</span></li>
+            <li class="skill-item"><span class="skill-name">GitHub</span><span class="skill-level skill-level--basic">基础使用</span></li>
+            <li class="skill-item"><span class="skill-name">VS Code</span><span class="skill-level skill-level--basic">基础使用</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group card">
+          <h3 class="skill-group__title">工程工具</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">CAD</span></li>
+            <li class="skill-item"><span class="skill-name">Revit</span></li>
+            <li class="skill-item"><span class="skill-name">BIM 基础</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group card">
+          <h3 class="skill-group__title">办公与其他</h3>
+          <ul class="skill-list">
+            <li class="skill-item"><span class="skill-name">Excel · 数据整理 / 基础函数</span></li>
+            <li class="skill-item"><span class="skill-name">Visio / SPSS / 金蝶</span></li>
+            <li class="skill-item"><span class="skill-name">问卷设计 / 调研信息整理 / 汇报材料制作</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="learning-note card">
+        <div class="learning-note__header">
+          <span class="section__num" aria-hidden="true">// 项目经历与校园经历</span>
+        </div>
+        <div class="learning-note__body">
+          <div class="learning-item">
+            <span class="learning-item__name">个人网站项目</span>
+            <a class="learning-item__type" href="https://github.com/wuxiiing/resume" target="_blank" rel="noopener">GitHub：wuxiiing / resume</a>
+            <p class="learning-item__desc">这是我第一个独立完成的前端项目，目标是用网页替代传统静态简历，更完整地展示个人经历与成长路径。参考 Arknights 游戏中“促融共竞”活动的运动转播美学，搭建带有明确视觉主题的单页网站；独立完成视觉设计，思考页面层级、视觉引导与信息展示逻辑，确定配色方案、布局逻辑和模块划分；使用 Copilot、Kimi、DeepSeek V4 完成 HTML/CSS 基础页面搭建，使用 ChatGPT、Claude 辅助内容整理、代码调试与问题排查；学习并使用 Git/GitHub 管理代码版本。</p>
+          </div>
+          <div class="learning-item">
+            <span class="learning-item__name">校园经历</span>
+            <span class="learning-item__type">调研整理 / 活动组织 / 团队协调</span>
+            <p class="learning-item__desc">参与大学生互联网+创新创业项目（校级），负责问卷设计、调研信息整理及汇报材料制作；担任校街舞社团部长（2023–2025），负责活动组织、人员协调及训练安排，获优秀学生干部称号。</p>
+          </div>
+        </div>
+        <div class="learning-note__edu">
+          <span class="edu-label">教育背景</span>
+          <span class="edu-text">天津城建大学 · 工程管理（本科）· 2021.09 — 2025.07</span>
+          <span class="edu-note">主修工程经济学、项目管理、工程造价管理、BIM基础、施工组织管理等。</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <div class="section__header">
+        <span class="section__num" aria-hidden="true">// 04</span>
+        <h2 class="section__title" id="contact-title">联系终端</h2>
+        <div class="section__rule" aria-hidden="true"></div>
+      </div>
+
+      <div class="contact__inner">
+        <p class="contact__intro">正在寻求 <strong>前端开发 · AI产品实现 · 用户体验方向</strong> 相关机会，欢迎联系。</p>
+        <div class="contact__grid">
+          <a href="tel:13038880351" class="contact-item card"><span class="contact-item__key">PHONE</span><span class="contact-item__val">13038880351</span></a>
+          <a href="mailto:462380155@qq.com" class="contact-item card"><span class="contact-item__key">EMAIL</span><span class="contact-item__val">462380155@qq.com</span></a>
+          <div class="contact-item card"><span class="contact-item__key">LOCATION</span><span class="contact-item__val">东莞（可异地）</span></div>
+          <a href="https://github.com/wuxiiing" target="_blank" rel="noopener" class="contact-item card"><span class="contact-item__key">GITHUB</span><span class="contact-item__val">wuxiiing</span></a>
+          <a href="麦桐-简历.pdf" download class="contact-item card contact-item--action"><span class="contact-item__key">RESUME</span><span class="contact-item__val">下载完整简历 →</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <span class="footer__name">麦桐 · MAI TONG</span>
+      <span class="footer__copy">© 2026 — 用 AI 工具协助制作</span>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+

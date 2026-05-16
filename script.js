@@ -94,6 +94,28 @@
     sectionObserver.observe(section);
   });
 
+  // --- Live Beijing time in quick access panel ---
+  const liveClock = document.querySelector('[data-live-clock]');
+  if (liveClock) {
+    const formatter = new Intl.DateTimeFormat('zh-CN', {
+      timeZone: 'Asia/Shanghai',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+
+    function updateLiveClock() {
+      const parts = Object.fromEntries(formatter.formatToParts(new Date()).map(part => [part.type, part.value]));
+      liveClock.textContent = `${parts.year}.${parts.month}.${parts.day} ${parts.hour}:${parts.minute}:${parts.second}`;
+    }
+
+    updateLiveClock();
+    window.setInterval(updateLiveClock, 1000);
+  }
   // --- Navbar scroll state ---
   if (navbar) {
     window.addEventListener('scroll', () => {
@@ -125,3 +147,4 @@
     });
   }
 })();
+
